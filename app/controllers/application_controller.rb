@@ -21,12 +21,12 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/sessions/login' do
-    binding.pry
+    # binding.pry
     erb :'sessions/login'
   end
 
   post '/sessions' do
-    # binding.pry
+    binding.pry
 
     redirect '/users/home'
   end
