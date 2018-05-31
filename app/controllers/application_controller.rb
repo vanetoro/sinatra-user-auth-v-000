@@ -38,7 +38,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/users/home' do
-    # binding.pry
+    binding.pry
     # @name = name
     erb :'/users/home'
   end
